@@ -1,11 +1,17 @@
+@google_search
 Feature: ilk feature file
-
+@iPhone
   Scenario: TC_01_google_iphone_arama
   Given kullanici google gider
   When kullanici iphone icin arama yapar
   Then sonuclarda iphone oldugunu dogrular
-
-
+  And close the application
+@tesla
+  Scenario: TC02_google_tesla_arama
+    Given kullanici google gider
+    When kullanici tesla icin arama yapar
+    Then sonuclarda tesla oldugunu dogrular
+    Then close the application
 
 
 
