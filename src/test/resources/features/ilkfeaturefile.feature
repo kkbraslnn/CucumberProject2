@@ -25,3 +25,9 @@ Feature: ilk feature file
   #And,When -> genelde ara adimlarda baglar olarak kullanilir
   #Note:Teknik olarak istenilen kelime istenilen step de kullanilabilir,
   #     ama anlam karmasasi olmamasi icin bu adimlar takip edilir.
+  #
+  # Belirli Scenario lari calistirmak icin cucumber tags ler kullanilir
+  #tag ler Fetuature, Scenario, Scerio Outline, Examples kelimeleri ile birlikte kullanilabilir
+  # Background: Her bir Scenario kelimesinden ONCE tek bir sefer calisir
+  # dryRun=false -> dryRun yokmus gibi calisir.Yani tum adimleri tek tek browserdan acar.
+  # dryRun=true  -> yeni bir step eklendiginde sadece tanimlanilmis step definitions olusturmak icin kullanilir,kullanilma sebebi zamandan tasarruftur.

@@ -44,6 +44,8 @@ NOTE: elementleri kullanmak icin page paketini kullan
 
     @FindBy(name= "q")
     public WebElement searchBox;
+
+
 }
 
 
