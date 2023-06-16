@@ -45,6 +45,17 @@ NOTE: elementleri kullanmak icin page paketini kullan
     @FindBy(name= "q")
     public WebElement searchBox;
 
+-------------Scenario Outline------------
+#Scenario -> Scenario Outline
+#"" -> "<sutun_ismi>"
+#Example kelimesi Scenario Outline dan sonra kullanilmali
+#Example verilerin kullanildigi yerdir
+-----------
+Scenario Outline Data Driven Testing icin kullanilir
+Yani benzer scenarioyu tekrar tekrar farkli datalarda calistirmak icin kullanilir.
+Scenario Outline cucumber cok onemlidir.
+Ne zaman birden fazla data ile islem yaparsak,scenario outline kullanabiliriz.
+Scenario Outline Excel ile otomasyon yapmaya benzer, tek fark, kullanimi daha kolaydir.
 
 }
 
