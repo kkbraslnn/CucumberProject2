@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         monochrome=true,//raporlarin konsol da daha okunakli cikmasi icin
         features = "./src/test/resources/features",//feature folder path
         glue = {"stepdefinitions","hooks"},//stepdefinitions path
-        tags = "@data_tables",
+        tags = "@excel_automation",
         dryRun = false
 
 
