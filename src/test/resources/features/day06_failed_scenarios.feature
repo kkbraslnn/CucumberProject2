@@ -5,7 +5,7 @@ Feature: hooks_test
 
   Scenario: TC01_google_iphone_arama
     When kullanici "iphone" için arama yapar
-    Then sonuclarin "apple" icerdigini dogrula
+    Then sonuclarin "iphone" icerdigini dogrula
     Then close the application
 
   Scenario: TC02_google_tesla_arama

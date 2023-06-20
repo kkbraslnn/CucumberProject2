@@ -9,7 +9,18 @@ public class HomePage {
     public HomePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-        @FindBy(xpath = "(//a[@role='button']) [1]")
-        public WebElement firstLogin;
-    }
+        @FindBy(xpath = "(//a[@role='button'])[1]")
+        public static WebElement firstLogin;
+
+        @FindBy(xpath = "dropdown-basic-button")
+        public static WebElement userID;
+
+        @FindBy(xpath = "(//a[text()='LogOut']")
+        public static WebElement logOutLink;
+
+        @FindBy(xpath = "(//button[contains(text(),'OK')]")
+        public static WebElement OK;
+
+
+}
 
