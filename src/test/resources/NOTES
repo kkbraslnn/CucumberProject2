@@ -59,12 +59,32 @@ Scenario Outline Excel ile otomasyon yapmaya benzer, tek fark, kullanimi daha ko
 
 }
 
+**********************PARALLEL TEST******************
+1. Plugins leri pom.xml e ekle
+*surefire -> parallel test icin
+*failsafe -> parallel testlerde bir testin fail olmasi dUrumunda diger testler calismaya devam eder.
+*cucumber-report -> extra renkli gelismis raporlar verir
+2. Coklu runner class olustur
+*SmokeTestRunner
+*RegressionTestRunner
+*TestRunner
+note:burda kullanilan taglerden en az biri feature file da olmali aksi takdirde calismaz
+3.terminal kullanarak,maven kodu ile testleri calistir
+mvn clear verify
+mvn clean install
+NOTE: Cucumber Reporting Linki :
+https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting
+https://github.com/damianszczepanik/maven-cucumber-reporting
+note : pc terminalden de calisir ama daha karmasiktir,projenin icine girmek lazim
+cd ABSOLUTE PATH
+cd /Users/kubrakaratash/Desktop/CucumberProject2
 
-
-
-
-
-
+********SPARK REPORTS********
+1.resources klasorunde extent-config.xml
+2.resources klasorunde extent.properties™
+3. Spark report dependency pom a ekle: https: //mvnrepository.com/artifact/ tech.grasshopper/extentreports-cucumber7-adapter/ 1.6.0 m
+4. Spark report plugin i Runner a ekle™
+"com. aventstack. extentreports. cucumber adapter. ExtentCucumberAdapter:"
 
 
 
